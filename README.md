@@ -20,12 +20,12 @@ Create a file named `AppConfig.js` under `appconfig`, that should export a valid
 
 ```
 module.exports = {
-    ENABLE_LOGGER: true,
-    BASE_URL: 'http://dev.example.com/v3/'
+    "ENABLE_LOGGER": true,
+    "BASE_URL": "http://dev.example.com/v3/"
 };
 ```
 
-You may keep different configuration set for different environment as `AppConfig.[environment].js`
+You may keep different configuration set for different environment as `AppConfig[.environment].js`
 
 ### Examples
 
@@ -33,7 +33,7 @@ You may keep different configuration set for different environment as `AppConfig
 
 ```
 module.exports = {
-    BASE_URL: 'http://test.example.com/v3/'
+    "BASE_URL": "http://test.example.com/v3/"
 };
 ```
 
@@ -41,8 +41,8 @@ module.exports = {
 
 ```
 module.exports = {
-    ENABLE_LOGGER: false,
-    BASE_URL: 'http://example.com/v3/'
+    "ENABLE_LOGGER": false,
+    "BASE_URL": "http://example.com/v3/"
 };
 ```
 
@@ -62,7 +62,7 @@ The command above will merge the `default` configuration set with `test` configu
 var AppConfig = {
   "ENV": "test",
   "ENABLE_LOGGER": true,
-  "BASE_URL": 'http://test.example.com/v3/'
+  "BASE_URL": "http://test.example.com/v3/"
 };
 
 global.ENV_DEVELOPMENT = false;
