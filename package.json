@@ -1,0 +1,28 @@
+{
+  "name": "nativescript-dev-appconfig",
+  "version": "1.0.0",
+  "description": "Export configurations based on environment for NativeScript projects.",
+  "scripts": {
+    "test": "exit 0",
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js",
+        "inject": true
+      }
+    ]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manojdcoder/nativescript-dev-appconfig.git"
+  },
+  "dependencies": {
+    "lodash": "^4.16.1",
+    "nativescript-hook": "^0.2.0"
+  }
+}
